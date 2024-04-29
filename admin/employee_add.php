@@ -17,7 +17,7 @@
 		//Insertion query
 		$sql = "INSERT INTO students (reference_number, firstname, mname, lastname, email, phone, residence_status, residence, programme, admission_year, level, created_on) VALUES ('$reference_number', '$firstname', '$mname', '$lastname', '$email', '$phone', '$residence_status', '$residence', '$programme', '$admission_year', '$level', NOW())";
 		if($conn->query($sql)){
-			$_SESSION['success'] = 'Student added successfully';
+			$_SESSION['success'] = 'eleve ajouter avec succes';
 		}
 		else{
 			$_SESSION['error'] = $conn->error;
